@@ -1,0 +1,90 @@
+@model Franchise.Entities.HuyLT.Models.Ingredient
+@{
+    ViewData["Title"] = "Edit Ingredient";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index">Ingredients</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Edit Ingredient</li>
+                </ol>
+            </nav>
+
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white py-3">
+                    <h4 class="mb-0 fw-bold">Edit Ingredient: @Model.IngredientName</h4>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-action="Edit" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                        <input type="hidden" asp-for="IngredientId" />
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="IngredientName" class="form-label fw-bold">Ingredient Name</label>
+                                <input asp-for="IngredientName" class="form-control" placeholder="e.g. Fresh Milk" />
+                                <span asp-validation-for="IngredientName" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Sku" class="form-label fw-bold">SKU</label>
+                                <input asp-for="Sku" class="form-control" placeholder="e.g. MILK-001" />
+                                <span asp-validation-for="Sku" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="UnitOfMeasure" class="form-label fw-bold">Unit Of Measure</label>
+                                <input asp-for="UnitOfMeasure" class="form-control" placeholder="e.g. Liters, Kg" />
+                                <span asp-validation-for="UnitOfMeasure" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="CurrentPrice" class="form-label fw-bold">Price</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">$</span>
+                                    <input asp-for="CurrentPrice" class="form-control" type="number" step="0.01" />
+                                </div>
+                                <span asp-validation-for="CurrentPrice" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label asp-for="MinimumStockLevel" class="form-label fw-bold">Min Stock Level</label>
+                                <input asp-for="MinimumStockLevel" class="form-control" type="number" />
+                                <span asp-validation-for="MinimumStockLevel" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label asp-for="StorageTemperature" class="form-label fw-bold">Storage Temp (°C)</label>
+                                <input asp-for="StorageTemperature" class="form-control" type="number" step="0.1" />
+                            </div>
+
+                            <div class="col-md-4">
+                                <label asp-for="ShelfLifeDays" class="form-label fw-bold">Shelf Life (Days)</label>
+                                <input asp-for="ShelfLifeDays" class="form-control" type="number" />
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-check form-switch mt-2">
+                                    <input class="form-check-input" type="checkbox" asp-for="IsActive">
+                                    <label class="form-check-label fw-bold" asp-for="IsActive">Is Active</label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-4 d-flex gap-2">
+                                <button type="submit" class="btn btn-primary px-4">Save Changes</button>
+                                <a asp-action="Index" class="btn btn-outline-secondary px-4">Return to List</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

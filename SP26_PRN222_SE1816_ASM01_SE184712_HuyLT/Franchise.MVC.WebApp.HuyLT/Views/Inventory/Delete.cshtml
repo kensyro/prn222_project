@@ -1,0 +1,39 @@
+@model Franchise.Entities.HuyLT.Models.Inventory
+@{
+    ViewData["Title"] = "Delete Inventory Record";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm border-top border-danger border-4">
+                <div class="card-body p-4 text-center">
+                    <div class="mb-4">
+                        <i class="bi bi-trash text-danger" style="font-size: 3rem;"></i>
+                    </div>
+                    <h3 class="fw-bold mb-3">Remove Inventory Record?</h3>
+                    <p class="text-muted mb-4">
+                        Are you sure you want to remove the record for <strong>@(Model.Ingredient?.IngredientName ?? "Batch " + Model.BatchNumber)</strong>? 
+                        This action will permanently delete this stock entry.
+                    </p>
+
+                    <div class="alert alert-light border mb-4 text-start">
+                        <div class="small text-muted text-uppercase fw-bold">Summary</div>
+                        <div class="d-flex justify-content-between mt-1">
+                            <span>Batch: @Model.BatchNumber</span>
+                            <span class="fw-bold text-danger">Q: @Model.CurrentQuantity</span>
+                        </div>
+                    </div>
+
+                    <form asp-action="Delete" method="post">
+                        <input type="hidden" asp-for="InventoryId" />
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-danger py-2 fw-bold shadow-sm">Yes, Delete Record</button>
+                            <a asp-action="Index" class="btn btn-light py-2 shadow-sm border">No, Keep It</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+﻿@*
+    Ingredient Detail Page
+*@
+@model Franchise.Entities.HuyLT.Models.Ingredient
+@{
+    ViewData["Title"] = "Ingredient Details";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Ingredient Details</h2>
+    <dl class="row">
+        <dt class="col-sm-3">Ingredient ID</dt>
+        <dd class="col-sm-9">@Model.IngredientId</dd>
+        <dt class="col-sm-3">Ingredient Name</dt>
+        <dd class="col-sm-9">@Model.IngredientName</dd>
+        <dt class="col-sm-3">SKU</dt>
+        <dd class="col-sm-9">@Model.Sku</dd>
+        <dt class="col-sm-3">Unit Of Measure</dt>
+        <dd class="col-sm-9">@Model.UnitOfMeasure</dd>
+        <dt class="col-sm-3">Minimum Stock Level</dt>
+        <dd class="col-sm-9">@Model.MinimumStockLevel</dd>
+        <dt class="col-sm-3">Storage Temperature</dt>
+        <dd class="col-sm-9">@Model.StorageTemperature</dd>
+        <dt class="col-sm-3">Shelf Life Days</dt>
+        <dd class="col-sm-9">@Model.ShelfLifeDays</dd>
+        <dt class="col-sm-3">Current Price</dt>
+        <dd class="col-sm-9">@Model.CurrentPrice</dd>
+        <dt class="col-sm-3">Description</dt>
+        <dd class="col-sm-9">@Model.Description</dd>
+    </dl>
+    <a asp-action="Edit" asp-route-id="@Model.IngredientId" class="btn btn-primary">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
