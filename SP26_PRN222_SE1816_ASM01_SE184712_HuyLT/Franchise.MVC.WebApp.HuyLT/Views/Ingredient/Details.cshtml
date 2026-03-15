@@ -1,0 +1,67 @@
+@model Franchise.Entities.HuyLT.Models.Ingredient
+@{
+    ViewData["Title"] = "Ingredient Details";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index">Ingredients</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Details</li>
+                </ol>
+            </nav>
+
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
+                    <h4 class="mb-0 fw-bold">Ingredient Information</h4>
+                    <span class="badge @(Model.IsActive == true ? "bg-success" : "bg-danger")">
+                        @(Model.IsActive == true ? "Active" : "Inactive")
+                    </span>
+                </div>
+                <div class="card-body p-0">
+                    <table class="table mb-0">
+                        <tbody>
+                            <tr>
+                                <th class="ps-4 bg-light text-muted small text-uppercase" style="width: 30%">Ingredient Name</th>
+                                <td class="ps-4 fw-bold">@Model.IngredientName</td>
+                            </tr>
+                            <tr>
+                                <th class="ps-4 bg-light text-muted small text-uppercase">SKU</th>
+                                <td class="ps-4"><span class="badge bg-light text-dark border">@Model.Sku</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ps-4 bg-light text-muted small text-uppercase">Unit Of Measure</th>
+                                <td class="ps-4">@Model.UnitOfMeasure</td>
+                            </tr>
+                            <tr>
+                                <th class="ps-4 bg-light text-muted small text-uppercase">Standard Price</th>
+                                <td class="ps-4">@Model.CurrentPrice?.ToString("C")</td>
+                            </tr>
+                            <tr>
+                                <th class="ps-4 bg-light text-muted small text-uppercase">Min Stock Level</th>
+                                <td class="ps-4">@Model.MinimumStockLevel</td>
+                            </tr>
+                            <tr>
+                                <th class="ps-4 bg-light text-muted small text-uppercase">Storage Info</th>
+                                <td class="ps-4">
+                                    <div class="mb-1">Temp: @(Model.StorageTemperature?.ToString() ?? "N/A") °C</div>
+                                    <div>Shelf Life: @(Model.ShelfLifeDays?.ToString() ?? "N/A") Days</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="ps-4 bg-light text-muted small text-uppercase">Description</th>
+                                <td class="ps-4">@(string.IsNullOrEmpty(Model.Description) ? "No description provided." : Model.Description)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-footer bg-white py-3 d-flex gap-2">
+                    <a asp-action="Edit" asp-route-id="@Model.IngredientId" class="btn btn-primary px-4">Edit Ingredient</a>
+                    <a asp-action="Index" class="btn btn-outline-secondary px-4">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

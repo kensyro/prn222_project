@@ -1,0 +1,13 @@
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\bin\Debug\net8.0\Franchise.Entities.HuyLT.deps.json
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\bin\Debug\net8.0\Franchise.Entities.HuyLT.dll
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\bin\Debug\net8.0\Franchise.Entities.HuyLT.pdb
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\obj\Debug\net8.0\Franchise.Entities.HuyLT.csproj.AssemblyReference.cache
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\obj\Debug\net8.0\Franchise.Entities.HuyLT.GeneratedMSBuildEditorConfig.editorconfig
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\obj\Debug\net8.0\Franchise.Entities.HuyLT.AssemblyInfoInputs.cache
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\obj\Debug\net8.0\Franchise.Entities.HuyLT.AssemblyInfo.cs
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\obj\Debug\net8.0\Franchise.Entities.HuyLT.csproj.CoreCompileInputs.cache
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\obj\Debug\net8.0\Franchise.Entities.HuyLT.sourcelink.json
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\obj\Debug\net8.0\Franchise.Entities.HuyLT.dll
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\obj\Debug\net8.0\refint\Franchise.Entities.HuyLT.dll
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\obj\Debug\net8.0\Franchise.Entities.HuyLT.pdb
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\obj\Debug\net8.0\ref\Franchise.Entities.HuyLT.dll

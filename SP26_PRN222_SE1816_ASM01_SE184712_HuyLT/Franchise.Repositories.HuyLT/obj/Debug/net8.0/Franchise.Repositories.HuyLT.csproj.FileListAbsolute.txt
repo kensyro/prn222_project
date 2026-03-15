@@ -1,0 +1,16 @@
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\bin\Debug\net8.0\Franchise.Repositories.HuyLT.deps.json
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\bin\Debug\net8.0\Franchise.Repositories.HuyLT.dll
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\bin\Debug\net8.0\Franchise.Repositories.HuyLT.pdb
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\bin\Debug\net8.0\Franchise.Entities.HuyLT.dll
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\bin\Debug\net8.0\Franchise.Entities.HuyLT.pdb
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\obj\Debug\net8.0\Franchise.Repositories.HuyLT.csproj.AssemblyReference.cache
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\obj\Debug\net8.0\Franchise.Repositories.HuyLT.GeneratedMSBuildEditorConfig.editorconfig
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\obj\Debug\net8.0\Franchise.Repositories.HuyLT.AssemblyInfoInputs.cache
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\obj\Debug\net8.0\Franchise.Repositories.HuyLT.AssemblyInfo.cs
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\obj\Debug\net8.0\Franchise.Repositories.HuyLT.csproj.CoreCompileInputs.cache
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\obj\Debug\net8.0\Franchise.Repositories.HuyLT.sourcelink.json
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\obj\Debug\net8.0\Franchis.EEFF4109.Up2Date
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\obj\Debug\net8.0\Franchise.Repositories.HuyLT.dll
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\obj\Debug\net8.0\refint\Franchise.Repositories.HuyLT.dll
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\obj\Debug\net8.0\Franchise.Repositories.HuyLT.pdb
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Repositories.HuyLT\obj\Debug\net8.0\ref\Franchise.Repositories.HuyLT.dll
