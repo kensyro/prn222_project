@@ -1,4 +1,4 @@
-﻿using Franchise.Entities.HuyLT.Models;
+using Franchise.Entities.HuyLT.Models;
 using Franchise.Repositories.HuyLT.DBContext;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -102,22 +102,22 @@ namespace Franchise.Repositories.HuyLT.Basic
             return true;
         }
 
-        public T GetById(int id)
+        public T? GetById(int id)
         {
             return _context.Set<T>().Find(id);
         }
 
-        public async Task<T> GetByIdAsync(int id)
+        public async Task<T?> GetByIdAsync(int id)
         {
             return await _context.Set<T>().FindAsync(id);
         }
 
-        public T GetById(string code)
+        public T? GetById(string code)
         {
             return _context.Set<T>().Find(code);
         }
 
-        public async Task<T> GetByIdAsync(string code)
+        public async Task<T?> GetByIdAsync(string code)
         {
             return await _context.Set<T>().FindAsync(code);
         }
@@ -126,12 +126,12 @@ namespace Franchise.Repositories.HuyLT.Basic
         https://guidgenerator.com/
         uniqueidentifier | guid: daacb4fb-ff73-46ef-98f1-4af9aab2a30a
          */
-        public T GetById(Guid code)
+        public T? GetById(Guid code)
         {
             return _context.Set<T>().Find(code);
         }
 
-        public async Task<T> GetByIdAsync(Guid code)
+        public async Task<T?> GetByIdAsync(Guid code)
         {
             return await _context.Set<T>().FindAsync(code);
         }

@@ -1,4 +1,4 @@
-﻿using Franchise.Entities.HuyLT.Models;
+using Franchise.Entities.HuyLT.Models;
 using Franchise.Repositories.HuyLT.Basic;
 using Franchise.Repositories.HuyLT.DBContext;
 using Microsoft.EntityFrameworkCore;
@@ -17,7 +17,7 @@ namespace Franchise.Repositories.HuyLT
             _context = context;
         }
 
-        public async Task<(List<Inventory> Items, int TotalCount)> GetAllInventoryPagedAsync(int pageIndex, int pageSize, string search = null)
+        public async Task<(List<Inventory> Items, int TotalCount)> GetAllInventoryPagedAsync(int pageIndex, int pageSize, string? search = null)
         {
             var query = _context.Inventories
                 .Include(p => p.Ingredient)
@@ -27,6 +27,9 @@ namespace Franchise.Repositories.HuyLT
             {
                 query = query.Where(p => p.Ingredient.IngredientName.Contains(search));
             }
+
+            // Exclude blocked inventories (soft-deleted)
+            query = query.Where(p => p.IsBlocked == false || p.IsBlocked == null);
 
             int total = await query.CountAsync();
 
@@ -51,7 +54,7 @@ namespace Franchise.Repositories.HuyLT
         {
             var products = _context.Inventories
                 .Include(p => p.Ingredient)
-                .Where(p => p.IngredientId == ingredientId)
+                .Where(p => p.IngredientId == ingredientId && (p.IsBlocked == false || p.IsBlocked == null))
                 .OrderByDescending(p => p.LastUpdated)
                 .ToListAsync();
             return await products;
@@ -60,7 +63,7 @@ namespace Franchise.Repositories.HuyLT
         public async Task<bool> SkuExistsAsync(string sku)
         {
             if (string.IsNullOrWhiteSpace(sku)) return false;
-            return await _context.Inventories.AnyAsync(p => p.Ingredient.Sku == sku);
+            return await _context.Inventories.AnyAsync(p => p.Ingredient.Sku == sku && (p.IsBlocked == false || p.IsBlocked == null));
         }
     }
 }

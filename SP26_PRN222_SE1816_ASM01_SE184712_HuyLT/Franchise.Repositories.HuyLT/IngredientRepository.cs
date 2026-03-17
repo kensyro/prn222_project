@@ -26,7 +26,9 @@ namespace Franchise.Repositories.HuyLT
 
         public async Task<List<Ingredient>> GetAllIngredientsAsync()
         {
+            // Return only active ingredients for general use
             return await _context.Ingredients
+                .Where(i => i.IsActive == true)
                 .OrderBy(i => i.IngredientName)
                 .ToListAsync(); 
         }
@@ -38,6 +40,9 @@ namespace Franchise.Repositories.HuyLT
             {
                 query = query.Where(i => i.IngredientName.Contains(search));
             }
+            // Only include active ingredients for listing
+            query = query.Where(i => i.IsActive == true);
+
             int total = await query.CountAsync();
             var items = await query
                 .OrderBy(i => i.IngredientName)

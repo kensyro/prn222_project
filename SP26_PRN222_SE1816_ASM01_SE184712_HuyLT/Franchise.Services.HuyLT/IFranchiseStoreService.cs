@@ -14,5 +14,7 @@ namespace Franchise.Services.HuyLT
         Task<Franchise.Entities.HuyLT.Models.FranchiseStore?> GetStoreByIdAsync(int id);
         Task<Franchise.Entities.HuyLT.Models.FranchiseStore?> GetStoreByEmailAsync(string email);
         Task UpdateStoreAsync(Franchise.Entities.HuyLT.Models.FranchiseStore store);
+        Task AddStoreAsync(Franchise.Entities.HuyLT.Models.FranchiseStore store);
+        Task DeleteStoreAsync(int id);
     }
 }

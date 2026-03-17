@@ -24,7 +24,8 @@ namespace Franchise.Services.HuyLT
             var ingre = await _repo.GetIngredientsByIdAsync(ingredientId);
             if (ingre != null)
             {
-                ingre.IsActive = true;
+                // Soft-delete: mark as inactive
+                ingre.IsActive = false;
                 await _repo.UpdateAsync(ingre);
             }
         }

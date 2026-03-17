@@ -52,5 +52,18 @@ namespace Franchise.Services.HuyLT
             }
         }
 
+        public async Task AddStoreAsync(FranchiseStore store)
+        {
+            await _franchiseStoreRepository.CreateAsync(store);
+        }
+
+        public async Task DeleteStoreAsync(int id)
+        {
+            var store = await _franchiseStoreRepository.GetByIdAsync(id);
+            if (store != null)
+            {
+                await _franchiseStoreRepository.RemoveAsync(store);
+            }
+        }
     }
 }

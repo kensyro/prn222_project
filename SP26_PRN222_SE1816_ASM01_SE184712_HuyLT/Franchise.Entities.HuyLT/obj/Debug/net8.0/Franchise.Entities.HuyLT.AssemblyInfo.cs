@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Franchise.Entities.HuyLT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+466fd3bd59064d796315a53593bf3f0b3ea2da17")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13b6ee45936b189d21dad6a2064cdae42c73bcf0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Franchise.Entities.HuyLT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Franchise.Entities.HuyLT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

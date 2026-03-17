@@ -1,3 +1,9 @@
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\out_build\Franchise.Entities.HuyLT.deps.json
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\out_build\Franchise.Entities.HuyLT.dll
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\out_build\Franchise.Entities.HuyLT.pdb
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\out_build_v2\Franchise.Entities.HuyLT.deps.json
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\out_build_v2\Franchise.Entities.HuyLT.dll
+D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\out_build_v2\Franchise.Entities.HuyLT.pdb
 D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\bin\Debug\net8.0\Franchise.Entities.HuyLT.deps.json
 D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\bin\Debug\net8.0\Franchise.Entities.HuyLT.dll
 D:\prn222-final\prn222_project\SP26_PRN222_SE1816_ASM01_SE184712_HuyLT\Franchise.Entities.HuyLT\bin\Debug\net8.0\Franchise.Entities.HuyLT.pdb
