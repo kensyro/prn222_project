@@ -1,0 +1,38 @@
+@page
+@model Franchise.Razor.WebApp.HuyLT.Pages.Ingredient.CreateModel
+
+<h1>Add Ingredient</h1>
+
+<form method="post" class="mb-3">
+    <div class="row">
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.IngredientName" class="form-label"></label>
+            <input asp-for="Input.IngredientName" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.Sku" class="form-label"></label>
+            <input asp-for="Input.Sku" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.UnitOfMeasure" class="form-label"></label>
+            <input asp-for="Input.UnitOfMeasure" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.CurrentPrice" class="form-label"></label>
+            <input asp-for="Input.CurrentPrice" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.SupplierId" class="form-label"></label>
+            <select asp-for="Input.SupplierId" class="form-select" asp-items="Model.SupplierList"></select>
+        </div>
+        <div class="col-md-6 mb-2">
+            <div class="form-check">
+                <input asp-for="Input.IsActive" class="form-check-input" type="checkbox" />
+                <label asp-for="Input.IsActive" class="form-check-label"></label>
+            </div>
+        </div>
+    </div>
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-page="./Index" class="btn btn-secondary">Back</a>
+</form>

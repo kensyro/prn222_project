@@ -1,0 +1,3 @@
+# Bỏ qua thư mục vs và bin ở mọi nơi
+**/.vs/
+**/bin/

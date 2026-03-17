@@ -1,0 +1,21 @@
+@page "{id:int}"
+@model Franchise.Razor.WebApp.HuyLT.Pages.Inventory.DeleteModel
+
+<h1>Delete Inventory</h1>
+
+@if (Model.Item != null)
+{
+    <form method="post">
+        <input type="hidden" asp-for="Item.InventoryId" />
+        <div class="alert alert-danger">
+            Are you sure you want to delete inventory: <strong>@Model.Item.InventoryId</strong>?
+        </div>
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-page="./Index" class="btn btn-secondary">Cancel</a>
+    </form>
+}
+else
+{
+    <p>Inventory not found.</p>
+    <a asp-page="./Index">Back</a>
+}

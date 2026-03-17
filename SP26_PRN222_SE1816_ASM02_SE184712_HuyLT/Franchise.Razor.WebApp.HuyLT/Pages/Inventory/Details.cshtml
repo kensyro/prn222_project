@@ -1,0 +1,31 @@
+@page "{id:int}"
+@model Franchise.Razor.WebApp.HuyLT.Pages.Inventory.DetailsModel
+
+<h1>Inventory Details</h1>
+
+@if (Model.Item != null)
+{
+    <dl class="row">
+        <dt class="col-sm-2">InventoryId</dt><dd class="col-sm-10">@Model.Item.InventoryId</dd>
+        <dt class="col-sm-2">KitchenId</dt><dd class="col-sm-10">@Model.Item.KitchenId</dd>
+        <dt class="col-sm-2">StoreId</dt><dd class="col-sm-10">@Model.Item.StoreId</dd>
+        <dt class="col-sm-2">IngredientId</dt><dd class="col-sm-10">@Model.Item.IngredientId</dd>
+        <dt class="col-sm-2">TypeId</dt><dd class="col-sm-10">@Model.Item.TypeId</dd>
+        <dt class="col-sm-2">CurrentQuantity</dt><dd class="col-sm-10">@Model.Item.CurrentQuantity</dd>
+        <dt class="col-sm-2">LastUpdated</dt><dd class="col-sm-10">@Model.Item.LastUpdated</dd>
+        <dt class="col-sm-2">WarehouseLocation</dt><dd class="col-sm-10">@Model.Item.WarehouseLocation</dd>
+        <dt class="col-sm-2">BatchNumber</dt><dd class="col-sm-10">@Model.Item.BatchNumber</dd>
+        <dt class="col-sm-2">ExpiryDate</dt><dd class="col-sm-10">@Model.Item.ExpiryDate</dd>
+        <dt class="col-sm-2">ReservedQuantity</dt><dd class="col-sm-10">@Model.Item.ReservedQuantity</dd>
+        <dt class="col-sm-2">IsBlocked</dt><dd class="col-sm-10">@Model.Item.IsBlocked</dd>
+        <dt class="col-sm-2">LastReversalReference</dt><dd class="col-sm-10">@Model.Item.LastReversalReference</dd>
+        <dt class="col-sm-2">ReversalCount</dt><dd class="col-sm-10">@Model.Item.ReversalCount</dd>
+        <dt class="col-sm-2">Notes</dt><dd class="col-sm-10">@Model.Item.Notes</dd>
+    </dl>
+    <a asp-page="./Index" class="btn btn-secondary">Back</a>
+}
+else
+{
+    <p>Inventory not found.</p>
+    <a asp-page="./Index">Back</a>
+}

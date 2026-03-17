@@ -1,0 +1,48 @@
+@page
+@model Franchise.Razor.WebApp.HuyLT.Pages.Inventory.IndexModel
+@using System.Linq
+
+<h1>Inventory List</h1>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>InventoryId</th>
+            <th>IngredientId</th>
+            <th>CurrentQuantity</th>
+            <th>LastUpdated</th>
+            <th>WarehouseLocation</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Items.Where(i => !i.IsBlocked))
+    {
+        <tr>
+            <td>@item.InventoryId</td>
+            <td>@item.IngredientId</td>
+            <td>@item.CurrentQuantity</td>
+            <td>@item.LastUpdated</td>
+            <td>@item.WarehouseLocation</td>
+            <td>
+                <a asp-page="./Details" asp-route-id="@item.InventoryId" class="btn btn-info btn-sm">Details</a>
+                <a asp-page="./Edit" asp-route-id="@item.InventoryId" class="btn btn-warning btn-sm">Edit</a>
+                <form method="post" asp-page-handler="Delete" class="d-inline">
+                    <input type="hidden" name="id" value="@item.InventoryId" />
+                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this inventory?');">Delete</button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<a asp-page="./Create" class="btn btn-primary">Create Inventory</a>

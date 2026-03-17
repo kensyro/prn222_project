@@ -1,0 +1,71 @@
+@page "{id:int}"
+@model Franchise.Razor.WebApp.HuyLT.Pages.Inventory.EditModel
+
+<h1>Edit Inventory</h1>
+
+<form method="post" class="mb-3">
+    <input type="hidden" asp-for="Input.InventoryId" />
+    <div class="row">
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.KitchenId" class="form-label"></label>
+            <input asp-for="Input.KitchenId" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.StoreId" class="form-label"></label>
+            <input asp-for="Input.StoreId" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.IngredientId" class="form-label"></label>
+            <input asp-for="Input.IngredientId" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.TypeId" class="form-label"></label>
+            <input asp-for="Input.TypeId" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.CurrentQuantity" class="form-label"></label>
+            <input asp-for="Input.CurrentQuantity" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.LastUpdated" class="form-label"></label>
+            <input asp-for="Input.LastUpdated" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.WarehouseLocation" class="form-label"></label>
+            <input asp-for="Input.WarehouseLocation" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.BatchNumber" class="form-label"></label>
+            <input asp-for="Input.BatchNumber" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.ExpiryDate" class="form-label"></label>
+            <input asp-for="Input.ExpiryDate" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.ReservedQuantity" class="form-label"></label>
+            <input asp-for="Input.ReservedQuantity" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <div class="form-check">
+                <input asp-for="Input.IsBlocked" class="form-check-input" type="checkbox" />
+                <label asp-for="Input.IsBlocked" class="form-check-label"></label>
+            </div>
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.LastReversalReference" class="form-label"></label>
+            <input asp-for="Input.LastReversalReference" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.ReversalCount" class="form-label"></label>
+            <input asp-for="Input.ReversalCount" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <label asp-for="Input.Notes" class="form-label"></label>
+            <input asp-for="Input.Notes" class="form-control" />
+        </div>
+    </div>
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-page="./Index" class="btn btn-secondary">Back</a>
+</form>

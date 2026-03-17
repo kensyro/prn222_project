@@ -1,0 +1,20 @@
+@page "{id:int}"
+@model Franchise.Razor.WebApp.HuyLT.Pages.FranchiseStore.DeleteModel
+
+<h1>Delete Franchise Store</h1>
+
+@if (Model.Item != null)
+{
+    <form method="post">
+        <div class="alert alert-danger">
+            Are you sure you want to delete store: <strong>@Model.Item.StoreName</strong>?
+        </div>
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-page="./Index" class="btn btn-secondary">Cancel</a>
+    </form>
+}
+else
+{
+    <p>Store not found.</p>
+    <a asp-page="./Index">Back</a>
+}
